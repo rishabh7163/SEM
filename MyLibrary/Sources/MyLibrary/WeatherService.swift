@@ -5,7 +5,7 @@ public protocol WeatherService {
 }
 
 class WeatherServiceImpl: WeatherService {
-    let url = "http://host.docker.internal:8080"
+    let url = "https://fast-shelf-55514.herokuapp.com/"
 
     func getTemperature() async throws -> Int {
         return try await withCheckedThrowingContinuation { continuation in
